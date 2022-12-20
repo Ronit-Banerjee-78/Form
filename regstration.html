@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="regis.css">
+</head>
+
+<body>
+    <div class="registration">
+        <div class="header">
+            <h3>REGISTRATION</h3>
+        </div>
+
+        <form id="from">
+
+            <div class="from-control">
+                <label>First Name</label><small>*</small>
+                <input type="text" placeholder="firstname" id="username" autocomplete="off" onkeyup="namevalidate()">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+            <div class="from-control">
+                <label>Phone</label><small>*</small>
+                <input type="text" placeholder="123 456 7890" id="phone" autocomplete="off" onkeyup="phonevalidate()">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+            <div class="from-control">
+                <label>Email</label><small>*</small>
+                <input type="email" placeholder="username123@gmail.com" id="email" autocomplete="off" onkeyup="emailvalidate()">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+            <div class="from-control">
+                <label>Password</label><small>*</small>
+                <input type="password" placeholder="password" id="password" onkeyup="passwordvalidate()">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+            <div class="from-control">
+                <label>Confirm Password</label><small>*</small>
+                <input type="text" placeholder="Confirm Password" id="confirm" onkeyup="confarmvalidate()" autocomplete="off">
+
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+            <div class="from-control">
+                <label>Language</label>
+                <input type="text" placeholder="language">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <span>there is a error</span>
+            </div>
+
+
+
+            <button class="btn">SUBMIT</button>
+        </form>
+
+    </div>
+    <script src="java.js"></script>
+</body>
+
+</html>
